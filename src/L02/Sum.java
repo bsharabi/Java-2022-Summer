@@ -1,4 +1,4 @@
-package L03;
+package L02;
 
 public class Sum {
     public static int sum(int n) {

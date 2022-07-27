@@ -1,4 +1,4 @@
-package L03;
+package L02;
 
 public class Recursion {
     public static void main(String[] args) {

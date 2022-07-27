@@ -1,4 +1,4 @@
-package L03;
+package L02;
 
 public class MulRec {
     public static int mul(int a, int b) {

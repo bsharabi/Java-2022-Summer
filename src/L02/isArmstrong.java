@@ -1,4 +1,4 @@
-package L03;
+package L02;
 
 public class isArmstrong {
     public static void main(String[] args) {
