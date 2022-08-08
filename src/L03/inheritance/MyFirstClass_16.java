@@ -52,6 +52,8 @@ public class MyFirstClass_16 {
 
     public static void main(String[] args) {
 
+
+
         //new Car() - this creates in the heap a new object of tha "Car" class
         //and the address of this object is stored to the "myCar1"
         Car myCar1 = new Car();
