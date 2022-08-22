@@ -38,6 +38,10 @@ abstract public class Person implements MyActions {
     public double getAge() {
         return age;
     }
+    public abstract void b();
+
+
+
 
     public final void f() {
         out.println("Hello");
@@ -69,12 +73,18 @@ abstract public class Person implements MyActions {
     }
 }
 
-class Student extends Person {
+class Student extends Person implements Comparable<Student> {
     private String universityName;
+    private int g;
 
     public Student(String name, String lastName, String id, double age, String universityName) {
         super(name, lastName, id, age);
         this.universityName = universityName;
+    }
+
+    @Override
+    public void b() {
+
     }
 
     public Student() {
@@ -111,6 +121,15 @@ class Student extends Person {
                 "universityName='" + universityName + '\'' +
                 '}' + "\n" + super.toString();
     }
+
+    @Override
+    public int compareTo(Student o) {
+        if(this.g>o.g)
+            return  1;
+        else if(this.g<o.g)
+            return -1;
+        else return 0;
+    }
 }
 
 class Employee extends Person {
@@ -135,6 +154,11 @@ class Employee extends Person {
     public Employee(String name, String lastName, String id, double age, String workplaceName) {
         super(name, lastName, id, age);
         this.workplaceName = workplaceName;
+    }
+
+    @Override
+    public void b() {
+
     }
 
     @Override
