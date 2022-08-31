@@ -51,3 +51,13 @@ public final class Point {
         _y = Double.parseDouble(st.nextToken());
     }
 }// class Point
+
+class Test{
+    public static void main(String[] args) {
+        try{
+        Point p = new Point("[1,5]");
+        }catch (PointException p){
+            p.printError();
+        }
+    }
+}

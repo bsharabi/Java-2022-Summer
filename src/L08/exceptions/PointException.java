@@ -7,4 +7,8 @@ public class PointException extends Exception {
     public PointException(String error) {
         super(error);
     }
+    public void printError(){
+        System.out.println("New function printError");
+    }
+
 }

@@ -18,6 +18,7 @@ public class TestPoint {
 			{
 				System.err.println(e);
 				e.printStackTrace();
+				e.printError();
 				//System.exit(-1);  // exit the java program!
 			}
 			catch (NumberFormatException e) {
